@@ -1,11 +1,10 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class DotCom {
     private ArrayList<String> locationCells;
     private String name;
 
     public void setLocationCells(ArrayList<String> loc) {
-
         locationCells = loc;
     }
 
@@ -21,7 +20,7 @@ public class DotCom {
 
             if (locationCells.isEmpty()) {
                 result = "Потопил";
-                System.out.println("Ой! Вы потопили" + name + " : (");
+                System.out.println("Ой! Вы потопили " + name + " : (");
             } else {
                 result = "Попал";
             }

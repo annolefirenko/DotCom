@@ -1,8 +1,9 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class DotComBust {
     private GameHelper helper = new GameHelper();
-    private ArrayList<DotCom> dotComList = new ArrayList<DotCom>();
+    private ArrayList<DotCom> dotComList = new ArrayList<>();
     private int numOfGuesses = 0;
 
     private void setUpGame() {
@@ -55,10 +56,10 @@ public class DotComBust {
     private void finishGame() {
         System.out.println("Все 'сайты' ушли ко дну! Ваши акции теперь ничего не стоят.");
         if (numOfGuesses <= 18) {
-            System.out.println("Это заняло у вас всего" + numOfGuesses + "Попыток");
+            System.out.println("Это заняло у вас всего " + numOfGuesses + " попыток");
             System.out.println("Вы успели выбраться до того, как ваши вложения утонули");
         } else {
-            System.out.println("Это заняло у вас довольно много времени." + numOfGuesses + "попыток.");
+            System.out.println("Это заняло у вас довольно много времени. " + numOfGuesses + " попыток.");
             System.out.println("Рыбы водят хороводы вокруг ваших вложений");
         }
     }
